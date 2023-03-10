@@ -1,0 +1,38 @@
+<html>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        for (i = 0; i &lt; acc.length; i++) {
+            acc[i].onclick = function(){
+                this.classList.toggle("active");
+                this.nextElementSibling.classList.toggle("show");
+          }
+        }
+        </script>
+    
+    <body>
+        
+        <div id="toc_container">
+            <b>MỤC LỤC: Nội dung bài viết</b>&nbsp; <span class="accordion active">[Ẩn/Hiện]</span>
+            <br />
+            <div class="panel show">
+            <ul class="toc_list">
+            <li><a href="#phan-1">Phần 1: abc</a></li>
+            <li><a href="#phan-2">Phần 2: abc</a></li>
+            <li><a href="#phan-3">Phần 3: abc</a></li>
+            <li><a href="#phan-4">Phần 4: abc</a></li>
+            <li><a href="#phan-5">Phần 5: abc</a></li>
+            </ul>
+            </div>
+            </div>
+    <h3 id="phan-1"> 1. Nội dung Abc</h3>
+            Nội dung bài viết của phần 1 ở đây
+     <h3 id="phan-2"> 2. Nội dung Abc</h3>
+            Nội dung bài viết của phần 2 ở đây
+     <h3 id="phan-3"> 3. Nội dung Abc</h3>
+            Nội dung bài viết của phần 3 ở đây
+     <h3 id="phan-4"> 4. Nội dung Abc</h3>
+            Nội dung bài viết của phần 4 ở đây
+     <h3 id="phan-5"> 5. Nội dung Abc</h3>    
+    </body>
+</html>
